@@ -24,6 +24,8 @@ private:
 
     Relation relation;
 
+    void expandHeap();
+
 public:
     //implicit constructor
     explicit SecondPriorityQueue(Relation r);
