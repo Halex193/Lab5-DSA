@@ -26,7 +26,7 @@ void SecondPriorityQueue::push(TElem e, TPriority p)
     {
         expandHeap();
     }
-    //TODO
+    //TODO H
 }
 
 Element SecondPriorityQueue::top() const
@@ -35,8 +35,7 @@ Element SecondPriorityQueue::top() const
     {
         throw std::exception();
     }
-    //TODO
-    return {};
+    return heap[0];
 }
 
 Element SecondPriorityQueue::pop()
@@ -45,7 +44,7 @@ Element SecondPriorityQueue::pop()
     {
         throw std::exception();
     }
-    //TODO
+    //TODO R
     return {};
 }
 
