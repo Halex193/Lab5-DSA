@@ -26,7 +26,23 @@ void SecondPriorityQueue::push(TElem e, TPriority p)
     {
         expandHeap();
     }
-    //TODO H
+    heap[size] = newElement;
+    int currentLocation = size;
+    size++;
+    while (currentLocation != 0)
+    {
+        int parent = (currentLocation - 1) / 2;
+        if (relation(heap[parent].second, p))
+        {
+            return;
+        }
+        swap(heap[parent], heap[currentLocation]);
+        currentLocation = parent;
+    }
+    if (!relation(firstElement.second, p))
+    {
+        swap(firstElement, heap[0]);
+    }
 }
 
 Element SecondPriorityQueue::top() const
