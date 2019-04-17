@@ -1,13 +1,9 @@
 #include <iostream>
 #include "TestP5.h"
 
-using namespace std;
-
-int main()
-{
-    cout << "Hello, Răzvan!" << endl;
-
+int main() {
     testP5();
-    cout << "Tests succeeded!" << endl;
+    std::cout << "All tests passed!\n";
+    std::cout.flush();
     return 0;
 }
